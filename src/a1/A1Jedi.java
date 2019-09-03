@@ -29,13 +29,18 @@ public class A1Jedi {
 			scan.next();
 			scan.next();
 			int numBoughtEach=scan.nextInt();
+			String nameEach[]=new String[numBoughtEach];
+			
 			for(int j=0;j<numBoughtEach;j++) {
 				int howMany=scan.nextInt();
-				String what=scan.next();
+				nameEach[j]=scan.next();
 				for(int a=0;a<count;a++) {
-					if(what.equals(items[a])) {
-						numCus[a]++;
+					if(nameEach[j].equals(items[a])) {
+						
 						numItems[a]+=howMany;
+						if(!Repeat(nameEach,j)) {
+							numCus[a]++;
+						}
 					}
 				}
 			}
@@ -48,5 +53,14 @@ public class A1Jedi {
 			}
 		}
 		scan.close();
+	}
+	static boolean Repeat(String[] a, int k) {
+		boolean result=false;
+		for(int b=0;b<k;b++) {
+			if(a[b].equals(a[k])) {
+				result=true;
+			}
+		}
+		return result;
 	}
 }
