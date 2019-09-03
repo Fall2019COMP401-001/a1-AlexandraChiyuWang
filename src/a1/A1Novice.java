@@ -30,7 +30,7 @@ public class A1Novice {
 				total+= amount*price;
 			}
 			//print output		
-			System.out.println(first+"."+last+":"+ String.format("%.2f", total));
+			System.out.println(first+". "+last+": "+ String.format("%.2f", total));
 		}
 		scan.close();
 	}

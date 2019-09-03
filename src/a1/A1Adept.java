@@ -61,8 +61,8 @@ public class A1Adept {
 		double ave=findAve(amount);
 		
 		//print out the results
-		System.out.println("Biggest: "+name[indexMax]+"("+String.format("%.2f",amount[indexMax])+")");
-		System.out.println("Smallest: "+name[indexMin]+"("+String.format("%.2f",amount[indexMin])+")");
+		System.out.println("Biggest: "+name[indexMax]+" ("+String.format("%.2f",amount[indexMax])+")");
+		System.out.println("Smallest: "+name[indexMin]+" ("+String.format("%.2f",amount[indexMin])+")");
 		System.out.println("Average: "+String.format("%.2f",ave));
 		scan.close();
 	}
