@@ -44,7 +44,7 @@ public class A1Jedi {
 			if(numCus[c]==0) {
 				System.out.println("No customers bought"+items[c]);
 			}else {
-				System.out.println(numCus[c]+" customers bought "+numItems[c]);
+				System.out.println(numCus[c]+" customers bought "+numItems[c]+items[c]);
 			}
 		}
 		scan.close();
