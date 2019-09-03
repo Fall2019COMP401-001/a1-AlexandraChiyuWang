@@ -42,7 +42,7 @@ public class A1Jedi {
 		}
 		for(int c=0;c<count;c++) {
 			if(numCus[c]==0) {
-				System.out.println("No customers bought"+items[c]);
+				System.out.println("No customers bought "+items[c]);
 			}else {
 				System.out.println(numCus[c]+" customers bought "+numItems[c]+" "+items[c]);
 			}
